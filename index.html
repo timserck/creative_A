@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head> 
+		<meta charset="utf-8" />
+		<title>Fibonachi song</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link href="css/style.css" rel="stylesheet" />
+	</head>
+	
+	<body>
+		<div id="container">
+		<form id="form_generate" action="">
+		<legend>Fibonachi Song</legend>
+		<label for="nbr_start">choose a number start</label>
+			<input type="number" value='1' id="nbr_start">
+			<label for="nbr_repeat">choose a number of repeat</label>
+			<input type="number" value='2' id="nbr_repeat">
+			<span class="error_input">this number should be higher than 2</span>
+			<input type="submit"  value='play sound'>
+		</form>
+		<p>result</p>
+		<textarea id="result">
+			
+		</textarea>
+		</div> <!-- container -->
+		
+ 		<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+ 		<script src="js/lib/audiosynth.js"></script>
+ 		<script src="js/main.js"></script>
+	</body>
+</html>
